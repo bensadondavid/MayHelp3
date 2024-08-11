@@ -32,7 +32,7 @@
 }
 
 .links a{
-    color: #8e2cde;
+    color: #ffff; /* Bleu très foncé */
     text-decoration: none;
     font-family: 'Montserrat', 'sans-serif';
     font-size: large;
@@ -43,7 +43,7 @@
     width: 150px;
     height: 50px;
     background-color: transparent;
-    border: #b261f4 solid 1px;
+    border: #0056b3 solid 1px; /* Bleu foncé */
 }
 
 
@@ -55,8 +55,8 @@
     left: 3%;
     rotate: 90deg;
     background-color: transparent;
-    border: solid grey 1px;
-    color: #8e2cde;
+    border: solid #003366 1px; /* Bordure bleu très foncé */
+    color: #003366; /* Texte bleu très foncé */
 }
 
 @media(max-width: 768px) {
@@ -66,7 +66,7 @@
         left: 0;
         width: 100%;
         height: auto; 
-        background-color: #e5b7f2; 
+        background-color: #002147; /* Bleu nuit */
         z-index: 1000; 
     }
 
@@ -94,7 +94,7 @@
 .home{
     height: 100vh;
     width: 100%;
-    background: linear-gradient(315deg,#ffcc99 50%, #e0bbff);   
+    background: linear-gradient(315deg, #003366 50%, #001f3f); /* Dégradé bleu très foncé */
 }
 
 .central-text{
@@ -111,14 +111,14 @@
     text-align: center;
     font-family: 'Montserrat', 'sans-serif';
     font-size: 60px;
-    color: #f19233;;
+    color: #ccd6dd; /* Gris clair pour contraster */
 }
 
 .central-text .small-text{
     text-align: center;
     font-family: 'Montserrat', 'sans-serif';
     font-size: 20px;
-    color: #f2a151;
+    color: #99aab5; /* Gris moyen */
 }
 
 .central-text .buttons{
@@ -130,7 +130,7 @@
 .central-text .buttons button{
     width: 150px;
     height: 50px;
-    background-color:  transparent;
-    color: #e6630c;
-    border: grey solid 0.3px;
+    background-color: transparent;
+    color: #ccd6dd; /* Gris clair pour le texte */
+    border: #0056b3 solid 1px; /* Bordure bleu foncé */
 }
