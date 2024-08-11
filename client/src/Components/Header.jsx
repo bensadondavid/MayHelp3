@@ -25,7 +25,7 @@ const Header = ()=>{
         <>
         {screenWidth > 768 ?
         <div className="header">
-            <img src="logo2.png" alt="logo1" />
+            <h1 style={{color: '#b87333', padding : '20px'}}>M</h1>
             <div className="links">
                 <Link to='/'>Accueil</Link>
                 <Link to='/services'>Nos Services</Link>
@@ -47,7 +47,9 @@ const Header = ()=>{
         </div>
         </>
         :
+        <div className="btnoff">
         <button value={hamBtn} onClick={ToggleBtn} className="togglebtn">|||</button>
+        </div>
         }
         </>
     )
