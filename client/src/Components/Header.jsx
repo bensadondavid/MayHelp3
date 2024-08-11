@@ -20,7 +20,6 @@ const Header = ()=>{
         setHambtn(!hamBtn)
     }
 
-    const [david,setDavid] = useState('David')
 
     return(
         <>
