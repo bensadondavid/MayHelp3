@@ -97,6 +97,12 @@
     background: linear-gradient(315deg,#ffcc99 50%, #e0bbff);   
 }
 
+@media(max-width : 768px){
+    .home{
+        padding-top: 70px;
+    }
+}
+
 .central-text{
     height: 90%;
     width: 100%;
