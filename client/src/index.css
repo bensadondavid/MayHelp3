@@ -32,7 +32,7 @@
 }
 
 .links a{
-    color: #fff;
+    color: #8e2cde;
     text-decoration: none;
     font-family: 'Montserrat', 'sans-serif';
     font-size: large;
@@ -43,7 +43,7 @@
     width: 150px;
     height: 50px;
     background-color: transparent;
-    border: #6699ff solid 1px;
+    border: #b261f4 solid 1px;
 }
 
 
@@ -56,7 +56,7 @@
     rotate: 90deg;
     background-color: transparent;
     border: solid grey 1px;
-    color: navy;
+    color: #8e2cde;
 }
 
 @media(max-width: 768px) {
@@ -66,7 +66,7 @@
         left: 0;
         width: 100%;
         height: auto; 
-        background-color: #fff; 
+        background-color: #e5b7f2; 
         z-index: 1000; 
     }
 
@@ -87,10 +87,6 @@
         padding: 20px 0;
         margin-right: 0;
     }
-
-    .links a{
-        color: #6699ff;
-    }
 }
 
 /* Home */
@@ -98,7 +94,7 @@
 .home{
     height: 100vh;
     width: 100%;
-    background: linear-gradient(315deg, #a0c4ff, #99ccff, #6699ff);
+    background: linear-gradient(315deg,#ffcc99 50%, #e0bbff);   
 }
 
 @media(max-width : 768px){
@@ -121,14 +117,14 @@
     text-align: center;
     font-family: 'Montserrat', 'sans-serif';
     font-size: 60px;
-    color: #FFFFFF;
+    color: #f19233;;
 }
 
 .central-text .small-text{
     text-align: center;
     font-family: 'Montserrat', 'sans-serif';
     font-size: 20px;
-    color: azure;
+    color: #f2a151;
 }
 
 .central-text .buttons{
@@ -141,7 +137,7 @@
     width: 150px;
     height: 50px;
     background-color:  transparent;
-    color: #fff;
+    color: #e6630c;
     border: grey solid 0.3px;
 }
 
