@@ -184,3 +184,28 @@
         font-size: 30px;
     }
 }
+
+.btnoff{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 0%;
+    width: 90%;
+    margin: 10px;
+}
+
+.btnoff img{
+    width: 80px;
+    height: 80px;
+}
+
+.btnoff .togglebtn2{
+    height: 40px;
+    width: 40px;
+    rotate: 90deg;
+    background-color: transparent;
+    border: solid grey 1px;
+    color: #8e2cde;
+}
