@@ -20,12 +20,32 @@ const Header = ()=>{
         setHambtn(!hamBtn)
     }
 
+    useEffect(()=>{
+        const header = document.querySelector('.header')
+        const changeBg = ()=>{
+            if(screenWidth > 768){
+                if(window.scrollY < 150){
+                    header.style.backgroundColor = 'transparent'
+                }
+                else if(window.scrollY >= 150){
+                    header.style.backgroundColor = '#fff'
+                    header.style.backgroundColor = '#99ccff'
+                }
+            }
+        }
+        window.addEventListener('scroll', changeBg)
+
+        return ()=>{
+            window.removeEventListener('scroll', changeBg)
+        }
+    })
+
 
     return(
         <>
         {screenWidth > 768 ?
         <div className="header">
-            <h1 style={{color: '#b87333', padding : '20px'}}>M</h1>
+            <img src="logo2.png" alt="" />
             <div className="links">
                 <Link to='/'>Accueil</Link>
                 <Link to='/services'>Nos Services</Link>

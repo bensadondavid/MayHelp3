@@ -32,7 +32,7 @@
 }
 
 .links a{
-    color: #8e2cde;
+    color: #fff;
     text-decoration: none;
     font-family: 'Montserrat', 'sans-serif';
     font-size: large;
@@ -43,7 +43,7 @@
     width: 150px;
     height: 50px;
     background-color: transparent;
-    border: #b261f4 solid 1px;
+    border: #6699ff solid 1px;
 }
 
 
@@ -56,7 +56,7 @@
     rotate: 90deg;
     background-color: transparent;
     border: solid grey 1px;
-    color: #8e2cde;
+    color: navy;
 }
 
 @media(max-width: 768px) {
@@ -66,7 +66,7 @@
         left: 0;
         width: 100%;
         height: auto; 
-        background-color: #e5b7f2; 
+        background-color: #fff; 
         z-index: 1000; 
     }
 
@@ -87,6 +87,10 @@
         padding: 20px 0;
         margin-right: 0;
     }
+
+    .links a{
+        color: #6699ff;
+    }
 }
 
 /* Home */
@@ -94,7 +98,7 @@
 .home{
     height: 100vh;
     width: 100%;
-    background: linear-gradient(315deg,#ffcc99 50%, #e0bbff);   
+    background: linear-gradient(315deg, #a0c4ff, #99ccff, #6699ff);
 }
 
 @media(max-width : 768px){
@@ -117,14 +121,14 @@
     text-align: center;
     font-family: 'Montserrat', 'sans-serif';
     font-size: 60px;
-    color: #f19233;;
+    color: #FFFFFF;
 }
 
 .central-text .small-text{
     text-align: center;
     font-family: 'Montserrat', 'sans-serif';
     font-size: 20px;
-    color: #f2a151;
+    color: azure;
 }
 
 .central-text .buttons{
@@ -137,7 +141,7 @@
     width: 150px;
     height: 50px;
     background-color:  transparent;
-    color: #e6630c;
+    color: #fff;
     border: grey solid 0.3px;
 }
 
