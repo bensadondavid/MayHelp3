@@ -231,9 +231,20 @@ hr{
 /* Scnd page */
 
 .scnd-page{
-    height: 100vh;
+    height: 140vh;
     width: 100%;
     background: linear-gradient(135deg, #ffcc99 50%, #e0bbff);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+@media(max-width : 768px){
+    .scnd-page{
+        height: 220vh ;
+    }
 }
 
 /* About */
@@ -243,6 +254,12 @@ hr{
     width: 100%;
     padding-bottom: 30px;
     padding-top: 100px;
+}
+
+@media(max-width : 768px){
+    .about{
+        height: 120vh;
+    }
 }
 
 .about-title{
@@ -266,6 +283,9 @@ hr{
 
     .about-title{
         font-size: 30px;
+    }
+    .about-text{
+        font-size: 15px;
     }
 }
 
