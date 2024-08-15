@@ -29,7 +29,7 @@ const Header = ()=>{
                 }
                 else if(window.scrollY >= 150){
                     header.style.backgroundColor = '#fff'
-                    header.style.backgroundColor = '#99ccff'
+                    header.style.backgroundColor = '#fff'
                 }
             }
         }
