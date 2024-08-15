@@ -31,8 +31,21 @@ const Home = () => {
         </div>
       </div>
       <div className="scnd-page" id="testimonies-section">
+      <hr />
             <div className="about">
-                <p>Qui Sommes-Nous ?</p>
+                <p className="about-title">Qui Sommes-Nous ?</p>
+                <p className="about-text">
+                    MayHelp est né d’une passion pour l’organisation et le désir de simplifier la vie de chacun.
+                     Nous savons à quel point les démarches administratives peuvent être chronophages et stressantes, 
+                     surtout dans un pays étranger ou lorsque les délais sont serrés. C’est pourquoi nous avons créé un service de conciergerie 
+                     administrative sur mesure, dédié à alléger votre quotidien en prenant en charge vos tâches administratives et logistiques.
+                     Basés en Israël, nous sommes une équipe de professionnels expérimentés, parlant plusieurs langues et profondément ancrés dans la culture locale. 
+                     Nous comprenons les spécificités des systèmes administratifs israélien et français, et nous mettons notre expertise à votre service pour gérer efficacement vos besoins,
+                     que ce soit pour l’obtention de documents officiels, la gestion de votre immigration, la réservation de services, ou tout autre besoin quotidien.
+                     Notre mission est simple : vous permettre de vous concentrer sur ce qui compte vraiment, en vous libérant des tracas administratifs. Chez MayHelp,
+                     nous croyons que chaque minute est précieuse. C’est pourquoi nous nous engageons à vous offrir un service personnalisé, réactif et fiable, adapté à vos exigences uniques.
+                     Faites confiance à MayHelp pour vous accompagner dans toutes vos démarches, et découvrez la tranquillité d’esprit que vous méritez.
+                     </p>
             </div>
             <div className="temoignages">
             <Testimonies />
