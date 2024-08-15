@@ -28,8 +28,7 @@ const Header = ()=>{
                     header.style.backgroundColor = 'transparent'
                 }
                 else if(window.scrollY >= 150){
-                    header.style.backgroundColor = '#fff'
-                    header.style.backgroundColor = '#fff'
+                    header.style.backgroundColor = '#ffcc99'
                 }
             }
         }

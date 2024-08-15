@@ -132,11 +132,6 @@
     background: linear-gradient(315deg,#ffcc99 50%, #e0bbff);   
 }
 
-@media(max-width : 768px){
-    .home{
-        padding-top: 70px;
-    }
-}
 
 .central-text{
     height: 90%;
@@ -187,28 +182,19 @@
     background-color: transparent;
     border: none;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
+    position: absolute;
+    bottom: 2%;
+    cursor: pointer;
 }
 
 .svgs svg{
     height: 24px;
     width: 24px;
     padding: 0;
-}
-
-.svgs #svg1{
     animation: fade 1.2s infinite;
-    animation-delay: 3s;
-}
-.svgs #svg2{
-    animation: fade 1.2s infinite;
-    animation-delay: 2s;
-}
-.svgs #svg3{
-    animation: fade 1.2s infinite;
-    animation-delay: 1s;
 }
 
 @keyframes fade{
@@ -225,6 +211,103 @@
     }
 
     .central-text .big-text{
+        font-size: 30px;
+    }
+}
+
+/* Scnd page */
+
+.scnd-page{
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(135deg, #ffcc99 50%, #e0bbff);
+    padding-top: 100px;
+}
+
+/* Testimonies */
+
+.temoignages{
+    width: 100%;
+    height: 40vh;
+    font-family: 'Montserrat', 'sans-serif';
+    background-color: #ece4ff;
+}
+
+@media (max-width : 768px){
+    .temoignages{
+        height: 60vh;
+    }
+}
+
+  .testimonies-container{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .testimonies-elements{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .testimonie-name{
+    font-style: italic;
+  } 
+
+  @media(max-width : 768px){
+    .testimonies{
+        height: 60vh;
+    }
+  }
+
+  .previous-button {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    font-size: large;
+    border: none;
+    border-radius: 30%;
+    padding: 5px;
+    color: #000;
+  }
+  
+  .next-button {
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    font-size: large;
+    border: none;
+    border-radius: 30%;
+    padding: 5px;
+    color: #000;
+  }
+
+
+/* About */
+
+.about{
+    height: auto;
+    width: 100%;
+    padding-bottom: 30px;
+}
+
+.about p{
+    text-align: center;
+    font-family: 'Montserrat', 'sans-serif';
+    font-size: 60px;
+    color: #f19233;
+}
+
+@media(max-width : 768px){
+
+    .about p{
         font-size: 30px;
     }
 }
