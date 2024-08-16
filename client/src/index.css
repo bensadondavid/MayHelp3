@@ -32,13 +32,8 @@
     margin-right: 30px;
 }
 
-@keyframes bright {
-    from{ filter: brightness(1);}
-    to{ filter: brightness(1.3);}
-}
-
 .links a{
-    color: #a559e3;
+    color: #F2F2F2;
     text-decoration: none;
     font-family: 'Montserrat', 'sans-serif';
     font-size: large;
@@ -46,14 +41,14 @@
 }
 
 .links a:hover{
-    animation: bright 0.2s forwards;
+    opacity: 60%;
 }
 
 .links button{
     width: 150px;
     height: 50px;
     background-color: transparent;
-    border: #b261f4 solid 1px;
+    border: #fff solid 1px;
 }
 
 
@@ -66,14 +61,14 @@
     rotate: 90deg;
     background-color: transparent;
     border: solid grey 1px;
-    color: #8e2cde;
+    color: #fff;
 }
 
 @media(max-width: 768px) {
     .header {
         width: 100%;
         height: 35vh; 
-        background-color: #e5b7f2; 
+        background-color: #fff; 
         position: absolute;
         top: 0;
     }
@@ -83,6 +78,7 @@
         top: 30px;
         left: 10px;
         z-index: 1001; 
+        color: #003366;
     }
 
     .links {
@@ -96,6 +92,9 @@
         width: 100%;
         padding: 20px 0;
         margin-right: 0;
+    }
+    .links a{
+        color: #003366;
     }
 }
 
@@ -121,15 +120,16 @@
     rotate: 90deg;
     background-color: transparent;
     border: solid grey 1px;
-    color: #8e2cde;
+    color: #fff;
 }
+
 
 /* Home */
 
 .home{
     height: 100vh;
     width: 100%;
-    background: linear-gradient(315deg,#ffcc99 50%, #e0bbff);   
+    background: linear-gradient(180deg, #003366 0%, #004080 35%, #0059b3 70%, #0073e6 100%);
 }
 
 
@@ -149,14 +149,14 @@
     text-align: center;
     font-family: 'Montserrat', 'sans-serif';
     font-size: 60px;
-    color: #f19233;
+    color: #fff;
 }
 
 .central-text .small-text{
     text-align: center;
     font-family: 'Montserrat', 'sans-serif';
     font-size: 20px;
-    color: #f2a151;
+    color: #fff;
 }
 
 .central-text .buttons{
@@ -169,7 +169,7 @@
     width: 150px;
     height: 50px;
     background-color:  transparent;
-    color: #e6630c;
+    color: #fff;
     border: grey solid 0.3px;
     cursor: pointer;
 }
@@ -198,7 +198,7 @@
 }
 
 @keyframes fade{
-    from{fill:#f19233;}
+    from{fill:goldenrod;}
     to{fill: black;}
 }
 
@@ -233,7 +233,7 @@ hr{
 .scnd-page{
     height: 140vh;
     width: 100%;
-    background: linear-gradient(135deg, #ffcc99 50%, #e0bbff);
+    background: linear-gradient(180deg, #0073e6 0%, #0059b3 30%, #004080 65%, #003366 100%);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -266,7 +266,7 @@ hr{
     text-align: center;
     font-family: 'Montserrat', 'sans-serif';
     font-size: 60px;
-    color: #f19233;
+    color: #fff;
 }
 
 .about-text{
@@ -295,7 +295,7 @@ hr{
     width: 100%;
     height: 40vh;
     font-family: 'Montserrat', 'sans-serif';
-    background-color: #ece4ff;
+    background-color: #E0F2FF;
 }
 
 @media (max-width : 768px){
