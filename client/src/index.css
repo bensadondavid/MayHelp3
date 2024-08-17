@@ -453,7 +453,7 @@ form input::placeholder, textarea::placeholder, form .phone select::placeholder{
 
 @media(max-width : 768px){
     footer{
-        height: 160vh;
+        height: 180vh;
     }
     
     footer p{
