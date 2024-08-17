@@ -43,6 +43,7 @@ const Header = ()=>{
         document.getElementById("footer").scrollIntoView({
           behavior: "smooth"
         });
+        setHambtn(false)
       };
 
 
@@ -55,7 +56,7 @@ const Header = ()=>{
                 <Link to='/'>Accueil</Link>
                 <Link to='/services'>Nos Services</Link>
                 <Link to='/prices'>Nos tarifs</Link>
-                <button><Link to='/contact'>Contact</Link></button>
+                <button onClick={scrollToContact}>Contact</button>
             </div>
         </div>
         :
@@ -67,7 +68,7 @@ const Header = ()=>{
                 <Link to='/'>Accueil</Link>
                 <Link to='/services'>Nos Services</Link>
                 <Link to='/prices'>Nos tarifs</Link>
-                <button onScroll={scrollToContact}>Contact</button>
+                <button onClick={scrollToContact}>Contact</button>
             </div>
         </div>
         </>

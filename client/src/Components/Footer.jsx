@@ -37,14 +37,17 @@ const Footer = ()=>{
                 Facebook</button>
             </div>
             <div className="horaires">
-
-            </div>
-            <div className="tel">
-
+                <p>
+                    Horaires : Dimanche au Jeudi de 9H a 20H
+                </p>
+                <div className='tel'>
+                    <p>Yehouda : </p>
+                    <button>+972 58-739-6562</button>
+                </div>
             </div>
         </div>
         <div className="conditions">
-            <p>Conditions générales d'utilisation</p>
+            <a href='/'>Conditions générales d'utilisation</a>
         </div>
         </footer>
         </>
