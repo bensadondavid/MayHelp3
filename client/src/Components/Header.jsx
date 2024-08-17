@@ -39,6 +39,12 @@ const Header = ()=>{
         }
     })
 
+    const scrollToContact = () => {
+        document.getElementById("footer").scrollIntoView({
+          behavior: "smooth"
+        });
+      };
+
 
     return(
         <>
@@ -61,7 +67,7 @@ const Header = ()=>{
                 <Link to='/'>Accueil</Link>
                 <Link to='/services'>Nos Services</Link>
                 <Link to='/prices'>Nos tarifs</Link>
-                <button><Link to='/contact'>Contact</Link></button>
+                <button onScroll={scrollToContact}>Contact</button>
             </div>
         </div>
         </>
