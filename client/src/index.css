@@ -138,11 +138,10 @@
 /* Home */
 
 .home{
-    height: 100dvh;
+    height: 100vh;
     width: 100%;
     background: linear-gradient(180deg, #003366 0%, #004080 35%, #0059b3 70%, #0073e6 100%);
 }
-
 
 .central-text{
     height: 90%;
@@ -223,6 +222,9 @@
 
     .central-text .big-text{
         font-size: 30px;
+    }
+    .svgs{
+        bottom : 5%
     }
 }
 
