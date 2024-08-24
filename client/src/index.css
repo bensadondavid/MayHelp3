@@ -244,7 +244,7 @@ hr{
 /* Scnd page */
 
 .scnd-page{
-    height: 140vh;
+    height: 160vh;
     width: 100%;
     background: linear-gradient(180deg, #0073e6 0%, #0059b3 30%, #004080 65%, #003366 100%);
     display: flex;
@@ -256,14 +256,14 @@ hr{
 
 @media(max-width : 768px){
     .scnd-page{
-        height: 220vh ;
+        height: 300vh ;
     }
 }
 
 /* About */
 
 .about{
-    height: 60vh;
+    height: 80vh;
     width: 100%;
     padding-bottom: 30px;
     padding-top: 100px;
@@ -271,7 +271,7 @@ hr{
 
 @media(max-width : 768px){
     .about{
-        height: 120vh;
+        height: 180vh;
     }
 }
 
@@ -315,7 +315,7 @@ hr{
 
 @media (max-width : 768px){
     .temoignages{
-        height: 60vh;
+        height: 80vh;
     }
 }
 
