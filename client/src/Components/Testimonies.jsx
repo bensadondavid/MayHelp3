@@ -4,14 +4,14 @@ const Testimonies = () => {
 
   const testimonies = [
     {
-      name: "Jean P.",
-      location: "Paris",
-      text: "Grâce à MayHelp, j'ai pu obtenir mon permis de résidence sans stress. Ils ont pris en charge toutes les démarches administratives pour moi. Un service efficace et professionnel !",
+      name: "Hai Moshé A.",
+      location: "Jerusalem",
+      text: "MayHelp a été d’une aide précieuse pour mon inscription à l’université. Étant à l’étranger, ils ont pris en charge toutes les démarches nécessaires, rendant le processus simple et fluide. Leur professionnalisme et leur capacité d’écoute m’ont particulièrement impressionné. Je recommande vivement leurs services. Merci beaucoup à toute l’équipe ! ",
     },
     {
-      name: "Sarah L.",
+      name: "Alex H.",
       location: "Tel Aviv",
-      text: "MayHelp a facilité mon installation en Israël. Ils m'ont aidée à ouvrir un compte bancaire, obtenir mon numéro d'identité et même à réserver mes premiers rendez-vous médicaux.",
+      text: "Merci à MayHelp qui nous a permis de passer ce cap en toute efficacité  Entre les relevés des compteurs , suivi des dossiers gaz, eau, éléctricté, nos demarches en ont été grandement facilitées."
     },
     {
       name: "David R.",

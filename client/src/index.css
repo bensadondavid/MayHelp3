@@ -278,7 +278,7 @@ hr{
 .about-title{
     text-align: center;
     font-family: 'Montserrat', 'sans-serif';
-    font-size: 60px;
+    font-size: 50px;
     color: #fff;
 }
 
@@ -287,9 +287,11 @@ hr{
     font-family: 'Montserrat', 'sans-serif';
     font-size: 18px;
     color: whitesmoke;
-    width: 70%;
+    width: 75%;
     margin: auto;
     padding: 40px;
+    line-height: 1.5;
+
 }
 
 @media(max-width : 768px){
