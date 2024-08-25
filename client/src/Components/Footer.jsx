@@ -1,74 +1,102 @@
-import react, { useState } from "react"
+import React, { useState } from "react";
+import emailjs from "emailjs-com";
 
-const Footer = ()=>{
+const Footer = () => {
+  const [lastName, setLastName] = useState("");
+  const [firstName, setFirstName] = useState("");
+  const [indicatif, setIndicatif] = useState("");
+  const [phone, setPhone] = useState("");
+  const [message, setMessage] = useState("");
 
-    const [lastName, setLastName] = useState('')
-    const [firstName, setFirstName] = useState('')
-    const [indicatif, setIndicatif] = useState('')
-    const [phone, setPhone] = useState('')
-    const [message, setMessage] = useState('')
+  const handleLastName = (e) => {
+    setLastName(e.target.value);
+  };
+  const handleFirstName = (e) => {
+    setFirstName(e.target.value);
+  };
+  const handleIndicatif = (e) => {
+    setIndicatif(e.target.value);
+  };
+  const handlePhone = (e) => {
+    setPhone(e.target.value);
+  };
+  const handleMessage = (e) => {
+    setMessage(e.target.value);
+  };
 
-    const handleLastName = (e)=>{
-        setLastName(e.target.value)
-    }
-    const handleFirstName = (e)=>{
-        setFirstName(e.target.value)
-    }
-    const handleIndicatif = (e)=>{
-        setIndicatif(e.target.value)
-    }
-    const handlePhone = (e)=>{
-        setPhone(e.target.value)
-    }
-    const handleMessage = (e)=>{
-        setMessage(e.target.value)
-    }
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    
+    const serviceID = "service_r2x06rs";
+    const templateID = "template_z6o3ihp";
+    const userID = "otGW8L8uaTqBXqF18";
 
-    const handleSubmit = async(e)=>{
-        e.preventDefault()
-        const form = {
-            'lastName' : lastName, 
-            'firstName' : firstName,
-            'indicatif' : indicatif,
-            'phone' : phone, 
-            'message' : message
+    const templateParams = {
+      lastName: lastName,
+      firstName: firstName,
+      indicatif: indicatif || "+972",
+      phone: phone,
+      message: message,
+    };
+
+    emailjs
+      .send(serviceID, templateID, templateParams, userID)
+      .then(
+        (response) => {
+          console.log("SUCCESS!", response.status, response.text);
+          alert("Message envoyé avec succès !");
+        },
+        (error) => {
+          console.log("FAILED...", error);
+          alert("Échec de l'envoi du message.");
         }
-        try{
-            const response = await fetch('http://localhost:4000/contact', {
-                method : 'POST', 
-                headers : {'Content-type' : 'application/json'},
-                body : JSON.stringify(form)
-            })
-            const data = await response.json()
-            alert(data.message)
-            
-        }
-        catch(error){
-            console.log(error)
-        }
-    }
+      );
+  };
 
-    return(
-        <>
-        <footer id="footer">
-            <div className="contact">
-                <p>Contactez-Nous</p>
-                <form method="POST" onSubmit={handleSubmit}>
-                    <div className="infos">
-                        <input type="text" name="lastname" placeholder="Nom" value={lastName} onChange={handleLastName}/>
-                        <input type="text" name="firstname" placeholder="Prénom"  value={firstName} onChange={handleFirstName}/>
-                        <div className="phone">
-                            <select name="indicatif" value={indicatif} onChange={handleIndicatif}>
-                                <option value="israel">IL +972</option>
-                                <option value="france">FR +33</option>
-                            </select>
-                            <input type="tel" name="phone" placeholder="Téléphone" value={phone} onChange={handlePhone}/>
-                        </div>
-                    </div>
-                    <textarea name="message" placeholder="Votre message" value={message} onChange={handleMessage}></textarea>
-                    <button type="submit">Envoyer</button>
-                </form>
+  return (
+    <>
+      <footer id="footer">
+        <div className="contact">
+          <p>Contactez-Nous</p>
+          <form method="POST" onSubmit={handleSubmit}>
+            <div className="infos">
+              <input
+                type="text"
+                name="lastname"
+                placeholder="Nom"
+                value={lastName}
+                onChange={handleLastName}
+              />
+              <input
+                type="text"
+                name="firstname"
+                placeholder="Prénom"
+                value={firstName}
+                onChange={handleFirstName}
+              />
+              <div className="phone">
+                <select name="indicatif" value={indicatif} onChange={handleIndicatif}>
+                  <option value="+972">IL +972</option>
+                  <option value="+33">FR +33</option>
+                </select>
+                <input
+                  type="tel"
+                  name="phone"
+                  placeholder="Téléphone"
+                  value={phone}
+                  onChange={handlePhone}
+                />
+              </div>
             </div>
+            <textarea
+              name="message"
+              placeholder="Votre message"
+              value={message}
+              onChange={handleMessage}
+            ></textarea>
+            <button type="submit">Envoyer</button>
+          </form>
+        </div>
             <hr />
         <div className="horaires-contact">
             <div className="reseaux">
