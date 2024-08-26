@@ -118,7 +118,7 @@ const Footer = () => {
                 </p>
                 <div className='tel'>
                     <p>Yehouda : </p>
-                    <button>+972 58-739-6562</button>
+                    <a href="tel:+972 58-739-6562"><button>+972 58-739-6562</button></a>
                 </div>
             </div>
         </div>

@@ -4,6 +4,16 @@ const Testimonies = () => {
 
   const testimonies = [
     {
+      name: "Ruthy Illouz",
+      location: "Paris",
+      text: "Je recommande de se faire accompagner pour votre alya par MayHelp. J’ai été impressionné par le sérieux et l’investissement ! J’ai été aidé pour toutes mes démarches, que ce soit pour trouver mon école ou pour mes rendez-vous (ma teoudat zehout, l’ouverture de mon compte bancaire…). Un immense merci, grâce à vous, mon alya s’est faite de façon beaucoup plus sereine et organisée !!"
+    },
+    {
+      name: "Yossef Nabet",
+      location: "Jerusalem",
+      text: "Yehouda est hyper efficace. Il comprend vite le problème et le traite jusqu’au bout. Il est juste parfait pour parler aux interlocuteurs israéliens. Il ne lâche rien et obtient ce qu’il veut ! Il a un très grand sens du devoir et du service."
+    },
+    {
       name: "Hai Moshé A.",
       location: "Jerusalem",
       text: "MayHelp a été d’une aide précieuse pour mon inscription à l’université. Étant à l’étranger, ils ont pris en charge toutes les démarches nécessaires, rendant le processus simple et fluide. Leur professionnalisme et leur capacité d’écoute m’ont particulièrement impressionné. Je recommande vivement leurs services. Merci beaucoup à toute l’équipe ! ",
@@ -12,16 +22,6 @@ const Testimonies = () => {
       name: "Alex H.",
       location: "Tel Aviv",
       text: "Merci à MayHelp qui nous a permis de passer ce cap en toute efficacité  Entre les relevés des compteurs , suivi des dossiers gaz, eau, éléctricté, nos demarches en ont été grandement facilitées."
-    },
-    {
-      name: "David R.",
-      location: "Lyon",
-      text: "J'avais besoin d'une aide rapide pour renouveler mon passeport et organiser mon voyage. MayHelp a tout pris en main, je n'ai eu à m'occuper de rien. Service impeccable !",
-    },
-    {
-      name: "Esther M.",
-      location: "Jerusalem",
-      text: "Je suis impressionnée par la rapidité et l'efficacité de MayHelp. Ils ont géré toutes les formalités pour la scolarisation de mes enfants, je recommande vivement !",
     },
     {
       name: "Samuel B.",
