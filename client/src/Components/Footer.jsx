@@ -113,8 +113,9 @@ const Footer = () => {
                     </a>
             </div>
             <div className="horaires">
-                <p>
-                    Horaires : Dimanche au Jeudi de 9H a 20H
+                <p style={{fontSize : 'large', textAlign: 'center'}}>
+                    Dimanche au Jeudi
+                    <br /> 9H à 20H
                 </p>
                 <div className='tel'>
                     <p>Yehouda : </p>
