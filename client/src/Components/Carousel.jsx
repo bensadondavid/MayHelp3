@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 const Carousel = () => {
   const categories = [
@@ -21,6 +21,13 @@ const Carousel = () => {
       prevIndex === 0 ? categories.length - 1 : prevIndex - 1
     );
   };
+
+  useEffect(() => {
+    categories.forEach((category) => {
+      const img = new Image();
+      img.src = category.image.replace('url(', '').replace(')', '');
+    });
+  }, [categories]);
 
   return (
     <div className="categories">
