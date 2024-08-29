@@ -9,6 +9,8 @@ const Carousel = () => {
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
+  const prevIndex = currentIndex === 0 ? categories.length - 1 : currentIndex - 1;
+  const nextIndex = (currentIndex + 1) % categories.length;
 
   const handleNext = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % categories.length);
@@ -22,13 +24,29 @@ const Carousel = () => {
 
   return (
     <div className="categories">
-      <p>{categories[currentIndex].name}</p>
+      <div className="categories-p">
+        <p className="previous-p">{categories[prevIndex].name}</p>
+        <p className="current-p">{categories[currentIndex].name}</p>
+        <p className="next-p">{categories[nextIndex].name}</p>
+      </div>
+      <div className="previous-category"
+      style={{ backgroundImage: categories[prevIndex].image }}
+      >
+      </div>
       <div
         className="category"
         style={{ backgroundImage: categories[currentIndex].image }}
       >
-        <button className="previous-btn" onClick={handlePrevious}>&lt;</button>
-        <button className="next-btn" onClick={handleNext}>&gt;</button>
+        <button className="previous-btn" onClick={handlePrevious}>
+          &lt;
+        </button>
+        <button className="next-btn" onClick={handleNext}>
+          &gt;
+        </button>
+      </div>
+      <div className="next-category"
+      style={{ backgroundImage: categories[nextIndex].image }}
+      >
       </div>
     </div>
   );

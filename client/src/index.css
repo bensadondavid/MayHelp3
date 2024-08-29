@@ -620,24 +620,64 @@ form input::placeholder, textarea::placeholder, form .phone select::placeholder{
     height: 100%;
 }
 
-.categories p{
-    text-align: center;
+.categories-p{
     color: white;
     padding-bottom: 20px;
     font-size: xx-large;
     font-family: 'Montserrat', 'sans-serif';
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.categories-p .previous-p, .next-p{
+    font-size: large;
+    opacity: 60%;
+}
+
+.previous-category{
+    width: 45%;
+    height: 45%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    left: 5%;
+    top: 45%;
+    z-index: 1;
+    opacity: 50%;
+    border-radius: 20px;
+    transition: background-image 1s;
 }
 
 .category{
-    width: 70%;
-    height: 70%;
+    width: 65%;
+    height: 75%;
     margin: auto;
-    background-image: url('touriste.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    z-index: 2;
+    border-radius: 20px;
+    transition: background-image 1s;
+}
 
+.next-category{
+    width: 45%;
+    height: 45%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    right: 5%;
+    top: 45%;
+    z-index: 1;
+    opacity: 50%;
+    border-radius: 20px;
+    transition: background-image 1s;
 }
 
 .category .previous-btn{
