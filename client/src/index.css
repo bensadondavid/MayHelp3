@@ -648,16 +648,6 @@ form input::placeholder, textarea::placeholder, form .phone select::placeholder{
     font-size: xx-large;
 }
 
-@media (max-width : 768px) {
-    .categories-p .previous-p, .next-p{
-        font-size: small;
-    }
-    
-    .current-p{
-        font-size: large;
-    }
-}
-
 .previous-category{
     width: 45%;
     height: 45%;
@@ -719,4 +709,23 @@ form input::placeholder, textarea::placeholder, form .phone select::placeholder{
     color: #E0F2FF;
     font-size: 50px;
     border: none;
+}
+
+@media (max-width : 768px) {
+    .categories-p .previous-p, .next-p{
+        font-size: small;
+    }
+    
+    .current-p{
+        font-size: large;
+    }
+
+    .previous-category, .next-category{
+        top: 47%;
+    }
+
+    .category{
+        height: 65%;
+        top: 10%;
+    }
 }
