@@ -608,19 +608,19 @@ form input::placeholder, textarea::placeholder, form .phone select::placeholder{
 
 /* Services */
 
-.Carousel{
+.Carousel {
     height: 90vh;
     width: 100%;
     background-color: #003366;
     padding: 25vh 0 15vh 0;
 }
 
-.categories{
+.categories {
     width: 100%;
     height: 100%;
 }
 
-.categories-p{
+.categories-p {
     color: white;
     padding-bottom: 50px;
     font-family: 'Montserrat', 'sans-serif';
@@ -632,30 +632,31 @@ form input::placeholder, textarea::placeholder, form .phone select::placeholder{
     text-align: center;
 }
 
-.categories-p button{
+.categories-p button {
     border: none;
     background-color: transparent;
     color: white;
     cursor: pointer;
 }
 
-.categories-p .previous-p, .next-p{
+.categories-p .previous-p, 
+.categories-p .next-p {
     font-size: large;
     opacity: 60%;
 }
 
-.current-p{
+.current-p {
     font-size: xx-large;
 }
 
-.previous-category{
+.previous-category, 
+.next-category {
     width: 45%;
     height: 45%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: absolute;
-    left: 5%;
     top: 45%;
     z-index: 1;
     opacity: 50%;
@@ -663,7 +664,15 @@ form input::placeholder, textarea::placeholder, form .phone select::placeholder{
     transition: background-image 1s;
 }
 
-.category{
+.previous-category {
+    left: 5%;
+}
+
+.next-category {
+    right: 5%;
+}
+
+.category {
     width: 65%;
     height: 75%;
     margin: auto;
@@ -674,57 +683,54 @@ form input::placeholder, textarea::placeholder, form .phone select::placeholder{
     z-index: 2;
     border-radius: 20px;
     transition: background-image 1s;
+    opacity: 85%;
 }
 
-.next-category{
-    width: 45%;
-    height: 45%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: absolute;
-    right: 5%;
-    top: 45%;
-    z-index: 1;
-    opacity: 50%;
-    border-radius: 20px;
-    transition: background-image 1s;
-}
-
-.category .previous-btn{
+.sub-category{
     position: absolute;
     top: 50%;
+    left: 10%;
+    width: 80%;
+    background-color: hsla(0, 0%, 100%, 0.7);
+    font-family: 'Montserrat', 'sans-serif';
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.category .previous-btn, 
+.category .next-btn {
+    position: absolute;
+    top: 50%;
+    background-color: transparent;
+    color: #E0F2FF;
+    font-size: 50px;
+    border: none;
+}
+
+.category .previous-btn {
     left: 1%;
-    background-color: transparent;
-    color: #E0F2FF;
-    font-size: 50px;
-    border: none;
 }
 
-.category .next-btn{
-    position: absolute;
-    top: 50%;
+.category .next-btn {
     right: 1%;
-    background-color: transparent;
-    color: #E0F2FF;
-    font-size: 50px;
-    border: none;
 }
 
-@media (max-width : 768px) {
-    .categories-p .previous-p, .next-p{
+@media (max-width: 768px) {
+    .categories-p .previous-p, 
+    .categories-p .next-p {
         font-size: small;
     }
     
-    .current-p{
+    .current-p {
         font-size: large;
     }
 
-    .category{
+    .category {
         height: 65%;
     }
 
-    .next-category, .previous-category{
+    .next-category, 
+    .previous-category {
         top: 50%;
     }
 }
