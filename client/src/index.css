@@ -622,7 +622,7 @@ form input::placeholder, textarea::placeholder, form .phone select::placeholder{
 
 .categories-p{
     color: white;
-    padding-bottom: 20px;
+    padding-bottom: 50px;
     font-family: 'Montserrat', 'sans-serif';
     display: flex;
     flex-direction: row;
