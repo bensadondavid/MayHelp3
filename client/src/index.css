@@ -623,18 +623,39 @@ form input::placeholder, textarea::placeholder, form .phone select::placeholder{
 .categories-p{
     color: white;
     padding-bottom: 20px;
-    font-size: xx-large;
     font-family: 'Montserrat', 'sans-serif';
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
     flex-wrap: nowrap;
+    text-align: center;
+}
+
+.categories-p button{
+    border: none;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
 }
 
 .categories-p .previous-p, .next-p{
     font-size: large;
     opacity: 60%;
+}
+
+.current-p{
+    font-size: xx-large;
+}
+
+@media (max-width : 768px) {
+    .categories-p .previous-p, .next-p{
+        font-size: small;
+    }
+    
+    .current-p{
+        font-size: large;
+    }
 }
 
 .previous-category{

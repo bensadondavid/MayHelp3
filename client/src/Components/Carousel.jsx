@@ -22,19 +22,12 @@ const Carousel = () => {
     );
   };
 
-  useEffect(() => {
-    categories.forEach((category) => {
-      const img = new Image();
-      img.src = category.image.replace('url(', '').replace(')', '');
-    });
-  }, [categories]);
-
   return (
     <div className="categories">
       <div className="categories-p">
-        <p className="previous-p">{categories[prevIndex].name}</p>
+        <button onClick={handlePrevious}><p className="previous-p">{categories[prevIndex].name}</p></button>
         <p className="current-p">{categories[currentIndex].name}</p>
-        <p className="next-p">{categories[nextIndex].name}</p>
+        <button onClick={handleNext}><p className="next-p">{categories[nextIndex].name}</p></button>
       </div>
       <div className="previous-category"
       style={{ backgroundImage: categories[prevIndex].image }}
