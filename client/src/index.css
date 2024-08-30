@@ -723,4 +723,8 @@ form input::placeholder, textarea::placeholder, form .phone select::placeholder{
     .category{
         height: 65%;
     }
+
+    .next-category, .previous-category{
+        top: 50%;
+    }
 }
