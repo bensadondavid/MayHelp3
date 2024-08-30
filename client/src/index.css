@@ -733,4 +733,15 @@ form input::placeholder, textarea::placeholder, form .phone select::placeholder{
     .previous-category {
         top: 50%;
     }
+
+    .sub-category{
+        top: 20%;
+        width: 70%;
+    }
+    .category .previous-btn{
+        left: -10%;
+    }
+    .category .next-btn{
+        right: -10%;
+    }
 }
