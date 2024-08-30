@@ -22,54 +22,17 @@ const Carousel = () => {
     );
   };
 
-  useEffect(() => {
-    let touchStartX = 0;
-    let touchEndX = 0;
-
-    const handleTouchStart = (e) => {
-      touchStartX = e.touches[0].clientX;
-    };
-
-    const handleTouchMove = (e) => {
-      touchEndX = e.touches[0].clientX;
-    };
-
-    const handleTouchEnd = () => {
-      if (touchStartX - touchEndX > 50) {
-        // Swipe gauche
-        handleNext();
-      } else if (touchEndX - touchStartX > 50) {
-        // Swipe droite
-        handlePrevious();
-      }
-    };
-
-    document.addEventListener("touchstart", handleTouchStart);
-    document.addEventListener("touchmove", handleTouchMove);
-    document.addEventListener("touchend", handleTouchEnd);
-
-    return () => {
-      document.removeEventListener("touchstart", handleTouchStart);
-      document.removeEventListener("touchmove", handleTouchMove);
-      document.removeEventListener("touchend", handleTouchEnd);
-    };
-  }, [currentIndex]);
-
   return (
     <div className="categories">
       <div className="categories-p">
-        <button onClick={handlePrevious}>
-          <p className="previous-p">{categories[prevIndex].name}</p>
-        </button>
+        <button onClick={handlePrevious}><p className="previous-p">{categories[prevIndex].name}</p></button>
         <p className="current-p">{categories[currentIndex].name}</p>
-        <button onClick={handleNext}>
-          <p className="next-p">{categories[nextIndex].name}</p>
-        </button>
+        <button onClick={handleNext}><p className="next-p">{categories[nextIndex].name}</p></button>
       </div>
-      <div
-        className="previous-category"
-        style={{ backgroundImage: categories[prevIndex].image }}
-      ></div>
+      <div className="previous-category"
+      style={{ backgroundImage: categories[prevIndex].image }}
+      >
+      </div>
       <div
         className="category"
         style={{ backgroundImage: categories[currentIndex].image }}
@@ -81,10 +44,10 @@ const Carousel = () => {
           &gt;
         </button>
       </div>
-      <div
-        className="next-category"
-        style={{ backgroundImage: categories[nextIndex].image }}
-      ></div>
+      <div className="next-category"
+      style={{ backgroundImage: categories[nextIndex].image }}
+      >
+      </div>
     </div>
   );
 };
