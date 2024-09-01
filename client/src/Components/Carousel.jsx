@@ -2,10 +2,10 @@ import React, { useEffect, useState } from "react";
 
 const Carousel = () => {
   const categories = [
-    { name: "TOURISTE", image: "touriste.jpg", paragraphe : 'Voyager l’esprit tranquille ! MayHelp s’occupe de toutes vos démarches administratives pendant votre séjour. De la réservation de vos activités à l’organisation de vos formalités, profitez pleinement de votre voyage sans tracas administratifs.' },
-    { name: "SOLDAT", image: "soldatsimg.jpg", paragraphe :'En tant que soldat, votre temps est précieux. MayHelp est là pour vous épauler dans vos démarches administratives, afin que vous puissiez vous concentrer sur l’essentiel. Qu’il s’agisse de documents officiels ou de services personnalisés, nous sommes à vos côtés.'},
-    { name: "ALYAH", image: "telaviv.jpg", paragraphe : 'Faites de votre Alyah une expérience sereine et réussie. MayHelp vous guide à chaque étape, du visa aux démarches d’intégration. Nous simplifions votre installation en Israël pour que vous puissiez commencer cette nouvelle aventure en toute sérénité.' },
-    { name: "ADMINISTRATIF", image: "administratif.jpg", paragraphe : 'Simplifiez votre quotidien avec MayHelp ! Que vous soyez résident ou expatrié, nous prenons en charge toutes vos formalités administratives, des documents officiels aux tâches courantes. Concentrez-vous sur l’essentiel, nous nous occupons du reste.' },
+    { name: "TOURISTE", image: "touriste.jpg", paragraphe : 'Voyagez sereinement, MayHelp gère vos démarches administratives pour un séjour sans tracas.' },
+    { name: "SOLDAT", image: "soldatsimg.jpg", paragraphe :'MayHelp s’occupe de vos démarches administratives pour que vous puissiez vous concentrer sur l’essentiel'},
+    { name: "ALYAH", image: "telaviv.jpg", paragraphe : 'MayHelp simplifie votre Alyah en vous guidant à chaque étape pour une installation réussie en Israël.' },
+    { name: "ADMINISTRATIF", image: "administratif.jpg", paragraphe : 'MayHelp gère vos formalités administratives pour que vous puissiez vous concentrer sur l’essentiel.' },
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -44,6 +44,7 @@ const Carousel = () => {
         <img src={categories[currentIndex].image} alt="" />
         <div className="sub-category">
           <p>{categories[currentIndex].paragraphe}</p>
+          <button className="call-to-action">Découvrir</button>
         </div>
         <button className="previous-btn" onClick={handlePrevious}>
           &lt;

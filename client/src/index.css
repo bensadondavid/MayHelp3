@@ -649,6 +649,7 @@ form input::placeholder, textarea::placeholder, form .phone select::placeholder{
     font-size: xx-large;
 }
 
+
 .previous-category, 
 .next-category {
     width: 45%;
@@ -681,8 +682,6 @@ form input::placeholder, textarea::placeholder, form .phone select::placeholder{
     position: relative;
     z-index: 2;
     border-radius: 20px;
-    transition: background-image 1s;
-    opacity: 85%;
 }
 
 .categories img{
@@ -700,6 +699,19 @@ form input::placeholder, textarea::placeholder, form .phone select::placeholder{
     font-family: 'Montserrat', 'sans-serif';
     border-radius: 10px;
     padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.sub-category button{
+    padding: 10px;
+    background-color: #003366;
+    color: white;
+    border: none;
+    border-radius: 4px;
 }
 
 .category .previous-btn, 
