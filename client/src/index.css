@@ -761,6 +761,11 @@ form input::placeholder, textarea::placeholder, form .phone select::placeholder{
     .category .next-btn{
         right: -10%;
     }
+    .categories img{
+        height: 100%;
+        object-fit: cover;
+        object-position: 50%;
+    }
 }
 
 
@@ -768,7 +773,7 @@ form input::placeholder, textarea::placeholder, form .phone select::placeholder{
 
 .prices{
     width: 100%;
-    background: linear-gradient(180deg, #0073e6 0%, #0059b3 30%, #004080 65%, #003366 100%);
+    background: linear-gradient(180deg, #003366 0%, #004080 35%, #004080 70%, #003366 100%);
     padding: 25vh 0 15vh 0;
 }
 
