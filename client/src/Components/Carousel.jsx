@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 const Carousel = () => {
   const categories = [
-    { name: "TOURISTE", image: "touriste.jpg", paragraphe : 'Voyagez sereinement, MayHelp gère vos démarches administratives pour un séjour sans tracas.' },
+    { name: "TOURISTE", image: "img1.jpg", paragraphe : 'Voyagez sereinement, MayHelp gère vos démarches administratives pour un séjour sans tracas.' },
     { name: "SOLDAT", image: "soldatsimg.jpg", paragraphe :'MayHelp s’occupe de vos démarches administratives pour que vous puissiez vous concentrer sur l’essentiel'},
-    { name: "ALYAH", image: "telaviv.jpg", paragraphe : 'MayHelp simplifie votre Alyah en vous guidant à chaque étape pour une installation réussie en Israël.' },
-    { name: "ADMINISTRATIF", image: "administratif.jpg", paragraphe : 'MayHelp gère vos formalités administratives pour que vous puissiez vous concentrer sur l’essentiel.' },
+    { name: "ALYAH", image: "img1.jpg", paragraphe : 'MayHelp simplifie votre Alyah en vous guidant à chaque étape pour une installation réussie en Israël.' },
+    { name: "ADMINISTRATIF", image: "soldatsimg.jpg", paragraphe : 'MayHelp gère vos formalités administratives pour que vous puissiez vous concentrer sur l’essentiel.' },
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -44,7 +45,7 @@ const Carousel = () => {
         <img src={categories[currentIndex].image} alt="" />
         <div className="sub-category">
           <p>{categories[currentIndex].paragraphe}</p>
-          <button className="call-to-action">Découvrir</button>
+          <Link to='/prices'><button className="call-to-action">Découvrir</button></Link>
         </div>
         <button className="previous-btn" onClick={handlePrevious}>
           &lt;
