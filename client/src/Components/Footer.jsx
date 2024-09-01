@@ -124,7 +124,7 @@ const Footer = () => {
             </div>
         </div>
         <div className="conditions">
-            <a href='/'>Conditions générales d'utilisation</a>
+            <a href='/conditions'>Conditions générales d'utilisation</a>
         </div>
         </footer>
         </>

@@ -865,3 +865,49 @@ form input::placeholder, textarea::placeholder, form .phone select::placeholder{
         padding: 8px 15px;
     }
 }
+
+/* Conditions generales */
+
+.conditions-generales{
+    width: 100%;
+    background: linear-gradient(180deg, #003366 0%, #004080 35%, #004080 70%, #003366 100%);
+    padding: 12vh 0 15vh 0;
+}
+
+.cgu-container {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    color: #fff;
+    line-height: 1.6;
+    border-radius: 8px;
+}
+
+.cgu-section {
+    margin-bottom: 20px;
+}
+
+.cgu-section h2 {
+    color: #fff;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.cgu-section ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.cgu-section p, 
+.cgu-section ul li {
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+.cgu-section a {
+    color: goldenrod;
+    text-decoration: none;
+}
+
+.cgu-section a:hover {
+    text-decoration: underline;
+}
