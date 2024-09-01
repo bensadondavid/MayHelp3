@@ -608,7 +608,6 @@ form input::placeholder, textarea::placeholder, form .phone select::placeholder{
 
 /* Services */
 
-/* Container principal pour le carousel */
 .Carousel {
     height: 90vh;
     width: 100%;
@@ -624,7 +623,7 @@ form input::placeholder, textarea::placeholder, form .phone select::placeholder{
 .categories-p {
     color: white;
     padding-bottom: 50px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', 'sans-serif';
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -638,7 +637,6 @@ form input::placeholder, textarea::placeholder, form .phone select::placeholder{
     background-color: transparent;
     color: white;
     cursor: pointer;
-    transition: opacity 0.3s ease;
 }
 
 .categories-p .previous-p, 
@@ -649,9 +647,8 @@ form input::placeholder, textarea::placeholder, form .phone select::placeholder{
 
 .current-p {
     font-size: xx-large;
-    opacity: 1;
-    transition: opacity 0.3s ease;
 }
+
 
 .previous-category, 
 .next-category {
@@ -665,7 +662,6 @@ form input::placeholder, textarea::placeholder, form .phone select::placeholder{
     z-index: 1;
     opacity: 50%;
     border-radius: 20px;
-    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
 }
 
 .previous-category {
@@ -686,22 +682,21 @@ form input::placeholder, textarea::placeholder, form .phone select::placeholder{
     position: relative;
     z-index: 2;
     border-radius: 20px;
-    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
 }
 
-.categories img {
+.categories img{
     width: 100%;
     height: 100%;
     border-radius: 20px;
 }
 
-.sub-category {
+.sub-category{
     position: absolute;
     top: 50%;
     left: 10%;
     width: 80%;
     background-color: hsla(0, 0%, 100%, 0.7);
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', 'sans-serif';
     border-radius: 10px;
     padding: 10px;
     display: flex;
@@ -711,17 +706,12 @@ form input::placeholder, textarea::placeholder, form .phone select::placeholder{
     gap: 10px;
 }
 
-.sub-category button {
+.sub-category button{
     padding: 10px;
     background-color: #003366;
     color: white;
     border: none;
     border-radius: 4px;
-    cursor: pointer;
-}
-
-.sub-category button:hover {
-    background-color: #002244;
 }
 
 .category .previous-btn, 
@@ -732,9 +722,6 @@ form input::placeholder, textarea::placeholder, form .phone select::placeholder{
     color: #E0F2FF;
     font-size: 50px;
     border: none;
-    cursor: pointer;
-    transform: translateY(-50%);
-    transition: color 0.3s ease;
 }
 
 .category .previous-btn {
@@ -745,12 +732,6 @@ form input::placeholder, textarea::placeholder, form .phone select::placeholder{
     right: 1%;
 }
 
-.category .previous-btn:hover,
-.category .next-btn:hover {
-    color: #E0F2FF;
-}
-
-/* Responsiveness pour les écrans plus petits */
 @media (max-width: 768px) {
     .categories-p .previous-p, 
     .categories-p .next-p {
@@ -770,16 +751,15 @@ form input::placeholder, textarea::placeholder, form .phone select::placeholder{
         top: 50%;
     }
 
-    .sub-category {
-        top: 35%;
+    .sub-category{
+        top: 40%;
         width: 70%;
     }
-
-    .category .previous-btn {
+    .category .previous-btn{
         left: -10%;
     }
-    
-    .category .next-btn {
+    .category .next-btn{
         right: -10%;
     }
 }
+

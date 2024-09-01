@@ -3,10 +3,10 @@ import { Link } from "react-router-dom";
 
 const Carousel = () => {
   const categories = [
-    { name: "TOURISTE", image: "img1.jpg", paragraphe : 'Voyagez sereinement, MayHelp gère vos démarches administratives pour un séjour sans tracas.' },
+    { name: "TOURISTE", image: "touriste.jpg", paragraphe : 'Voyagez sereinement, MayHelp gère vos démarches administratives pour un séjour sans tracas.' },
     { name: "SOLDAT", image: "soldatsimg.jpg", paragraphe :'MayHelp s’occupe de vos démarches administratives pour que vous puissiez vous concentrer sur l’essentiel'},
-    { name: "ALYAH", image: "img1.jpg", paragraphe : 'MayHelp simplifie votre Alyah en vous guidant à chaque étape pour une installation réussie en Israël.' },
-    { name: "ADMINISTRATIF", image: "soldatsimg.jpg", paragraphe : 'MayHelp gère vos formalités administratives pour que vous puissiez vous concentrer sur l’essentiel.' },
+    { name: "ALYAH", image: "israel.jpg", paragraphe : 'MayHelp simplifie votre Alyah en vous guidant à chaque étape pour une installation réussie en Israël.' },
+    { name: "ADMINISTRATIF", image: "admin.jpg", paragraphe : 'MayHelp gère vos formalités administratives pour que vous puissiez vous concentrer sur l’essentiel.' },
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
