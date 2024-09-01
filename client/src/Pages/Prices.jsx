@@ -6,7 +6,9 @@ const Prices = ()=>{
     return(
         <>
             <Header />
-            <div className='prices'></div>
+            <div className='prices'>
+                
+            </div>
             <Footer />
         </>
     )
