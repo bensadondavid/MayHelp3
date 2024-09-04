@@ -308,7 +308,7 @@ hr{
 }
 
   .testimonies-container{
-    height: auto;
+    height: 40vh;
     width: 100%;
     position: relative;
     display: flex;
