@@ -318,7 +318,7 @@ hr{
 
   @media(max-width : 768px){
     .testimonies-container{
-        height: 90vh;
+        height: 120vh;
     }
   }
 

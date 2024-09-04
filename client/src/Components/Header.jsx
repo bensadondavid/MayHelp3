@@ -1,10 +1,9 @@
 import React, { useEffect, useState } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Header = ()=>{
 
     const [screenWidth, setScreenWidth] = useState(window.innerWidth)
-    const location = useLocation();
     useEffect(()=>{
         const changeWidth = ()=>{
             setScreenWidth(window.innerWidth)
