@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Header from "../Components/Header";
 import Testimonies from "../Components/Testimonies";
 import Footer from "../Components/Footer";
@@ -25,7 +26,7 @@ const Home = () => {
           <p className="big-text">Ne bougez plus, <br /> On s'occupe de tout.</p>
           <p className="small-text">Bienvenue chez MayHelp, votre accompagnateur au quotidien.</p>
           <div className="buttons">
-            <button onClick={scrollToTestimonials}>En savoir plus</button>
+            <Link to='/prices'><button>En savoir plus</button></Link>
             <button onClick={scrollToContact}>Nous contacter</button>
           </div>
           <button className="svgs" onClick={scrollToTestimonials}>

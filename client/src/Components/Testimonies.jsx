@@ -15,38 +15,23 @@ const Testimonies = () => {
     },
     {
       name: "Hai Moshé A.",
-      location: "Jerusalem",
+      location: "USA",
       text: "MayHelp a été d’une aide précieuse pour mon inscription à l’université. Étant à l’étranger, ils ont pris en charge toutes les démarches nécessaires, rendant le processus simple et fluide. Leur professionnalisme et leur capacité d’écoute m’ont particulièrement impressionné. Je recommande vivement leurs services. Merci beaucoup à toute l’équipe ! ",
     },
     {
       name: "Alex H.",
-      location: "Tel Aviv",
+      location: "Jerusalem",
       text: "Merci à MayHelp qui nous a permis de passer ce cap en toute efficacité  Entre les relevés des compteurs , suivi des dossiers gaz, eau, éléctricté, nos demarches en ont été grandement facilitées."
     },
     {
-      name: "Samuel B.",
-      location: "Haifa",
-      text: "La gestion de mes documents fiscaux et administratifs n'a jamais été aussi simple. MayHelp s'occupe de tout avec un grand professionnalisme.",
+      name: "Brigitte Mekies",
+      location: "Jerusalem",
+      text: "Un grand merci pour votre dévouement, votre disponibilité et votre efficacité. Je suis enthousiaste à l’idée de poursuivre notre collaboration avec la même fluidité et simplicité.",
     },
     {
-      name: "Rachel K.",
-      location: "Marseille",
-      text: "En tant que nouvelle immigrante, j'avais besoin de beaucoup d'assistance pour m'intégrer en Israël. MayHelp a été là à chaque étape, rendant le processus bien plus facile.",
-    },
-    {
-      name: "Miriam D.",
-      location: "Ramat Gan",
-      text: "Un grand merci à MayHelp pour m'avoir aidée avec tous mes papiers administratifs. Ils sont très réactifs et toujours prêts à aider.",
-    },
-    {
-      name: "Hannah L.",
-      location: "Nice",
-      text: "MayHelp a organisé toutes mes réservations de voyage pour un déplacement professionnel. Tout était parfaitement coordonné et sans aucune erreur. Très satisfait !",
-    },
-    {
-      name: "Rebecca T.",
-      location: "Beersheba",
-      text: "J'ai pu me concentrer sur mon travail pendant que MayHelp s'occupait de tout le reste. Un service indispensable pour tous ceux qui manquent de temps.",
+      name: "Haya Chelli",
+      location: "Jerusalem",
+      text: "J'ai fait appel à Yehouda pour un problème avec le bitouah leoumi et il a été très efficace. Il est très réactif et va au bout des choses. Je recommande fortement.",
     }
   ];
 
