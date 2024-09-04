@@ -256,11 +256,6 @@ hr{
     gap: 30px;
 }
 
-@media(max-width : 768px){
-    .scnd-page{
-        height: auto ;
-    }
-}
 
 /* About */
 
@@ -269,12 +264,6 @@ hr{
     width: 100%;
     padding-bottom: 30px;
     padding-top: 100px;
-}
-
-@media(max-width : 768px){
-    .about{
-        height: 200vh;
-    }
 }
 
 
@@ -311,22 +300,15 @@ hr{
 /* Testimonies */
 
 .temoignages{
-    width: 100%;
+    width: auto;
     height: auto;
     font-family: 'Montserrat', 'sans-serif';
     background-color: #E0F2FF;
     padding: 20px;
 }
 
-@media (max-width : 768px){
-    .temoignages{
-        height: 80vh;
-    }
-}
-
-
   .testimonies-container{
-    height: 100%;
+    height: auto;
     width: 100%;
     position: relative;
     display: flex;
@@ -347,14 +329,6 @@ hr{
     font-style: italic;
   } 
 
-  @media(max-width : 768px){
-    .testimonies{
-        height: 60vh;
-    }
-    .testimonies-elements{
-        width: 50%;
-    }
-  }
 
   .previous-button {
     position: absolute;
@@ -466,9 +440,6 @@ form input::placeholder, textarea::placeholder, form .phone select::placeholder{
 }
 
 @media(max-width : 768px){
-    footer{
-        height: 170vh;
-    }
     
     footer p{
         color: white;

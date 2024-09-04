@@ -26,7 +26,7 @@ const Home = () => {
           <p className="big-text">Ne bougez plus, <br /> On s'occupe de tout.</p>
           <p className="small-text">Bienvenue chez MayHelp, votre accompagnateur au quotidien.</p>
           <div className="buttons">
-            <Link to='/prices'><button>En savoir plus</button></Link>
+            <Link to='/services'><button>En savoir plus</button></Link>
             <button onClick={scrollToContact}>Nous contacter</button>
           </div>
           <button className="svgs" onClick={scrollToTestimonials}>
