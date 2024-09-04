@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const Header = ()=>{
 
     const [screenWidth, setScreenWidth] = useState(window.innerWidth)
+    const location = useLocation();
     useEffect(()=>{
         const changeWidth = ()=>{
             setScreenWidth(window.innerWidth)
@@ -37,7 +38,7 @@ const Header = ()=>{
         return ()=>{
             window.removeEventListener('scroll', changeBg)
         }
-    })
+    }, [screenWidth])
 
     const scrollToContact = () => {
         document.getElementById("footer").scrollIntoView({
@@ -46,6 +47,9 @@ const Header = ()=>{
         setHambtn(false)
       };
 
+      const handleScrollToHome = () => {
+          window.scrollTo({ top: 0, behavior: "smooth" });
+      };
 
     return(
         <>
@@ -53,7 +57,7 @@ const Header = ()=>{
         <div className="header">
             <Link to='/'><img src="logo4.svg" /></Link>
             <div className="links">
-                <Link to='/'>Accueil</Link>
+                <Link onClick={handleScrollToHome} to='/'>Accueil</Link>
                 <Link to='/services'>Nos Services</Link>
                 <Link to='/prices'>Nos tarifs</Link>
                 <button onClick={scrollToContact}>Contact</button>
@@ -65,7 +69,7 @@ const Header = ()=>{
         <div className="header">
             <button value={hamBtn} onClick={ToggleBtn} className="togglebtn">|||</button>
             <div className="links">
-                <Link to='/'>Accueil</Link>
+                <Link onClick={handleScrollToHome} to='/'>Accueil</Link>
                 <Link to='/services'>Nos Services</Link>
                 <Link to='/prices'>Nos tarifs</Link>
                 <button onClick={scrollToContact}>Contact</button>

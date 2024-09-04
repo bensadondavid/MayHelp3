@@ -22,7 +22,7 @@ const Home = () => {
     <>
       <div className="home">
         <Header />
-        <div className="central-text">
+        <div className="central-text" id='Home'>
           <p className="big-text">Ne bougez plus, <br /> On s'occupe de tout.</p>
           <p className="small-text">Bienvenue chez MayHelp, votre accompagnateur au quotidien.</p>
           <div className="buttons">
