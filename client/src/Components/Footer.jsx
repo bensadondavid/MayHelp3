@@ -117,11 +117,11 @@ const Footer = () => {
                     Dimanche au Jeudi
                     <br /> 9H à 20H
                 </p>
-                <div className='tel'>
-                    <p>Yehouda : </p>
-                    <a href="tel:+972 58-739-6562"><button>+972 58-739-6562</button></a>
-                </div>
             </div>
+            <div className='tel'>
+                    <p>Tel : </p>
+                    <a href="tel:+972 58-739-6562"><button>+972 58-739-6562</button></a>
+              </div>
         </div>
         <div className="conditions">
             <a href='/conditions'>Conditions générales d'utilisation</a>
