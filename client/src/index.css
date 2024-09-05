@@ -502,6 +502,13 @@ form input::placeholder, textarea::placeholder, form .phone select::placeholder{
     gap: 40px;
 }
 
+@media(max-width : 768px){
+    .horaires-contact{
+        grid-template-columns: none;
+        grid-template-rows: repeat(3, 1fr);
+    }
+}
+
 
 /* Reseaux */
 
@@ -550,6 +557,12 @@ form input::placeholder, textarea::placeholder, form .phone select::placeholder{
     text-decoration: none;
     color: white;
     font-family: 'Montserrat', 'sans-serif';
+}
+
+@media(max-width : 768px){
+    .tel p{
+        font-size: large;
+    }
 }
 
 .tel button{
