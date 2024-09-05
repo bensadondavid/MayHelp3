@@ -99,7 +99,17 @@ const Footer = () => {
         </div>
             <hr />
         <div className="horaires-contact">
-            <div className="reseaux">
+            <div className="horaires">
+                <p style={{fontSize : 'large', textAlign: 'center'}}>
+                    Dimanche au Jeudi
+                    <br /> 9H à 20H
+                </p>
+            </div>
+            <div className='tel'>
+                    <p>Tel : </p>
+                    <a href="tel:+972 58-739-6562"><button>+972 58-739-6562</button></a>
+              </div>
+              <div className="reseaux">
                 <a className='whatsapp' href="https://wa.me/972587396562">
                 <svg height="512" viewBox="0 0 176 176" width="512" xmlns="http://www.w3.org/2000/svg" id="fi_3938041"><g id="Layer_2" dataname="Layer 2"><g id="_08.whatsapp" dataname="08.whatsapp"><path id="background" d="m144.52 173a532.59 532.59 0 0 1 -113 0 32.07 32.07 0 0 1 -28.52-28.48 532.59 532.59 0 0 1 0-113 32.07 32.07 0 0 1 28.48-28.52 532.59 532.59 0 0 1 113 0 32.07 32.07 0 0 1 28.52 28.48 532.59 532.59 0 0 1 0 113 32.07 32.07 0 0 1 -28.48 28.52z" fill="#29a71a"></path><g id="icon" fill="#fff"><path d="m126.8 49.2a54.57 54.57 0 0 0 -87.42 63.13l-5.79 28.11a2.08 2.08 0 0 0 .33 1.63 2.11 2.11 0 0 0 2.24.87l27.55-6.53a54.56 54.56 0 0 0 63.09-87.21zm-8.59 68.56a42.74 42.74 0 0 1 -49.22 8l-3.84-1.9-16.89 4 .05-.21 3.5-17-1.88-3.71a42.72 42.72 0 0 1 7.86-49.59 42.73 42.73 0 0 1 60.42 0 2.28 2.28 0 0 0 .22.22 42.72 42.72 0 0 1 -.22 60.19z"></path><path d="m116.71 105.29c-2.07 3.26-5.34 7.25-9.45 8.24-7.2 1.74-18.25.06-32-12.76l-.17-.15c-12.09-11.21-15.23-20.54-14.47-27.94.42-4.2 3.92-8 6.87-10.48a3.93 3.93 0 0 1 6.15 1.41l4.45 10a3.91 3.91 0 0 1 -.49 4l-2.25 2.92a3.87 3.87 0 0 0 -.35 4.32c1.26 2.21 4.28 5.46 7.63 8.47 3.76 3.4 7.93 6.51 10.57 7.57a3.82 3.82 0 0 0 4.19-.88l2.61-2.63a4 4 0 0 1 3.9-1l10.57 3a4 4 0 0 1 2.24 5.91z"></path></g></g></g></svg>
                 </a>
@@ -112,16 +122,6 @@ const Footer = () => {
                     <svg height="512" viewBox="0 0 64 64" width="512" xmlns="http://www.w3.org/2000/svg" id="fi_2504903"><g fillRule="evenodd"><path d="m32 64h-16a16.0007 16.0007 0 0 1 -16-16v-32a16.0007 16.0007 0 0 1 16-16h32a16 16 0 0 1 16 16v32a16 16 0 0 1 -16 16h-6a5 5 0 0 0 -10 0z" fill="#3764b9"></path><path d="m30 18h18a9.0006 9.0006 0 0 0 .92-17.954c-.306-.017-.609-.046-.92-.046h-32a16.0007 16.0007 0 0 0 -16 16v32a30.0007 30.0007 0 0 1 30-30" fill="#507dd2"></path><path d="m48 32a16 16 0 1 0 16 16v-32a16 16 0 0 1 -16 16" fill="#1e4ba0"></path><path d="m52 18a2 2 0 0 1 -2 2h-6a2 2 0 0 0 -2 2v8h7.56a2 2 0 0 1 1.9612 2.392c-.3713 1.857-.8757 4.379-1.2 6a2 2 0 0 1 -1.9612 1.608h-6.36v24h-10v-24h-6a2 2 0 0 1 -2-2v-6a2 2 0 0 1 2-2h6v-8a12 12 0 0 1 12-12h6a2 2 0 0 1 2 2z" fill="#fff"></path></g></svg>
                     </a>
             </div>
-            <div className="horaires">
-                <p style={{fontSize : 'large', textAlign: 'center'}}>
-                    Dimanche au Jeudi
-                    <br /> 9H à 20H
-                </p>
-            </div>
-            <div className='tel'>
-                    <p>Tel : </p>
-                    <a href="tel:+972 58-739-6562"><button>+972 58-739-6562</button></a>
-              </div>
         </div>
         <div className="conditions">
             <a href='/conditions'>Conditions générales d'utilisation</a>
