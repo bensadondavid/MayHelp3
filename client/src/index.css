@@ -895,7 +895,7 @@ form input::placeholder, textarea::placeholder, form .phone select::placeholder{
 
 .special-offers-section {
     width: 80%;
-    margin: 80px auto;
+    margin: 50px auto;
     padding: 50px 0;
     background-color: #f4f9ff;
     text-align: center;
