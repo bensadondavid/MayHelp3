@@ -863,6 +863,79 @@ form input::placeholder, textarea::placeholder, form .phone select::placeholder{
     }
 }
 
+/* offres speciales */
+
+.special-offers-section {
+    width: 80%;
+    margin: 80px auto;
+    padding: 50px 0;
+    background-color: #f4f9ff;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 20px;
+}
+
+.special-offers-title {
+    font-size: 2em;
+    color: #003366;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.special-offers-title::after {
+    content: '';
+    width: 60px;
+    height: 4px;
+    background-color: #004080;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.offers-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.offer-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 30%;
+    margin: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.offer-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.offer-card h4 {
+    font-size: 1.4em;
+    color: #003366;
+    margin-bottom: 10px;
+}
+
+.offer-card p {
+    font-size: 1.1em;
+    color: #004080;
+}
+
+@media (max-width: 768px) {
+    .offers-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .offer-card {
+        width: 70%;
+    }
+}
+
 /* Conditions generales */
 
 .conditions-generales{
