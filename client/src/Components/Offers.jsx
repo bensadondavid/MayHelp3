@@ -1,5 +1,6 @@
 const SpecialOffers = () => {
     return (
+        <>
         <div className="special-offers-section">
             <h3 className="special-offers-title">Nos Offres Spéciales</h3>
             <div className="offers-container">
@@ -33,6 +34,7 @@ const SpecialOffers = () => {
                 </div>
             </div>
         </div>
+        </>
     );
 };
 

@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import Header from "../Components/Header";
 import Testimonies from "../Components/Testimonies";
 import Footer from "../Components/Footer";
+import SpecialOffers from "../Components/Offers";
 
 const Home = () => {
 
@@ -65,6 +66,9 @@ const Home = () => {
             <div className="temoignages">
             <Testimonies />
             </div>
+      </div>
+      <div className="sp-home">
+        <SpecialOffers />
       </div>
       <Footer />
     </>

@@ -617,6 +617,16 @@ form input::placeholder, textarea::placeholder, form .phone select::placeholder{
     height: 100%;
 }
 
+@media(max-width: 768px) {
+    .Carousel {
+        height: 110vh;
+    }
+    .categories {
+        height: 90vh;
+    }
+    
+}
+
 .categories-p {
     color: white;
     padding-bottom: 50px;
@@ -763,6 +773,18 @@ form input::placeholder, textarea::placeholder, form .phone select::placeholder{
         object-fit: cover;
         object-position: 50%;
     }
+}
+
+/* text-categories */
+
+.text-categories{
+    height: auto;
+    width: 70%;
+    color: white;
+    margin: auto;
+    font-family: 'Montserrat', 'sans-serif';
+    font-size: larger;
+    text-align: justify;
 }
 
 
@@ -934,6 +956,13 @@ form input::placeholder, textarea::placeholder, form .phone select::placeholder{
     .offer-card {
         width: 70%;
     }
+}
+
+/* sp home */
+
+.sp-home{
+    padding: 20px;
+    background-color: #003366;
 }
 
 /* Conditions generales */
