@@ -620,7 +620,6 @@ form input::placeholder, textarea::placeholder, form .phone select::placeholder{
 @media(max-width: 768px) {
     .Carousel {
         height: 120vh;
-        padding: 12vh 0 15vh 0;
     }
     .categories {
         height: 90vh;
