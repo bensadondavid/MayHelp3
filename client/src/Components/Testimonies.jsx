@@ -48,7 +48,7 @@ const Testimonies = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       NextItem();
-    }, 6000); 
+    }, 10000); 
 
     return () => {
       clearInterval(interval);
