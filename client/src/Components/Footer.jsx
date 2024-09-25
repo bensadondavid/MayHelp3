@@ -106,7 +106,7 @@ const Footer = () => {
             <div className="horaires">
                 <p style={{fontSize : 'large', textAlign: 'center'}}>
                     Dimanche au Jeudi
-                    <br /> 9H à 20H
+                    <br /> 8H à 20H
                 </p>
             </div>
               <div className="reseaux">

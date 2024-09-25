@@ -781,7 +781,7 @@ form input::placeholder, textarea::placeholder, form .phone select::placeholder{
     height: auto;
     width: 70%;
     color: white;
-    margin: auto;
+    margin: 40px auto;
     font-family: 'Montserrat', 'sans-serif';
     font-size: larger;
     text-align: justify;

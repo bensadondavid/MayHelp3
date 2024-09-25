@@ -86,6 +86,7 @@ const Carousel = () => {
     <div className="text-categories">
         <p>{categories[currentIndex].description}</p>
     </div>
+    <hr />
     </>
   );
 };
